@@ -24,10 +24,10 @@ What should do our services if something fails?
 
 To prevent TCP connections timeouts or getting the same error constantly  we can introduce a **circuit breaker**, which is a system that must be queried every time that a service need another one, to find if the service is alive.
 
-<div style="text-align:center">
-<img src="flow-example.png" style="width: 550px; height: auto;"/>
-<p>*A flow example*</p>
-</div>
+<p align="center">
+<img src="flow-example.png" width="600" height="auto"/>
+<p align="center"><em>A flow example</em></p>
+</p>
 
 This kind of infrastructure is very easy to implement and it can give you the **state of the entire system** at any time, the cost of this, it that we are introducing a **single point of failure**.  
 If the registry goes down it becomes impossible to use the system, because no one can get the other services address and status. As single point of failure, it creates a cascade of failures in every part of the system. In this way, the registry breaks one of the key features of a Microservices system, the **resilience**.
