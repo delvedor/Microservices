@@ -8,7 +8,7 @@
     "sum": "node services/sum-service.js",
     "mult": "node services/mult-service.js",
     "concat": "node services/concat-service.js",
-    "services": "../../node_modules/.bin/parallelshell \"npm run sum\" \"npm run mult\" \"npm run concat\""
+    "services": "../node_modules/.bin/parallelshell \"npm run sum\" \"npm run mult\" \"npm run concat\""
   },
   "keywords": [],
   "author": "Tomas Della Vedova - @delvedor (http://delved.org)",
