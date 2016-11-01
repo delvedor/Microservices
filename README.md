@@ -8,6 +8,8 @@ In every implementation you will find a readme with the idea behind the architec
 
 Architectures:
 - <a href="https://github.com/delvedor/Microservices/tree/master/central-registry">Central registry</a>
+1. <a href="https://github.com/delvedor/Microservices/tree/master/central-registry">Central registry, REST</a>
+2. <a href="https://github.com/delvedor/Microservices/tree/master/messege-queue">Message Queue </a>
 
 ## Install
 *Inside the main repo folder.*
