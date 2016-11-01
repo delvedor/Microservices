@@ -9,7 +9,8 @@
   "dependencies": {
     "hapi": "^15.1.1",
     "joi": "^9.1.0",
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "zmq": "^2.15.3"
   },
   "devDependencies": {
     "parallelshell": "^2.0.0",
