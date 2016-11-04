@@ -1,0 +1,15 @@
+{
+  "name": "message-broker",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node client.js",
+    "sum": "node services/sum-service.js",
+    "mult": "node services/mult-service.js",
+    "concat": "node services/concat-service.js"
+  },
+  "keywords": [],
+  "author": "Tomas Della Vedova - @delvedor (http://delved.org)",
+  "license": "MIT",
+  "private": true
+}
