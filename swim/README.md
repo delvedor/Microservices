@@ -78,7 +78,7 @@ In this example has been used *SWIM* to handle the membership and failure detect
 Every service is designed to act as is alone in the world, on bootup it searches for other services in the (local) network and after 500 milliseconds if it does not find other services it starts the *SWIM* protocol with no other members in the network.
 If instead it finds other services in the network, it will join the other node, using the above explained mechanism.
 
-If you want more information of how *ZeroMQ* works, see the [message-queue](https://github.com/delvedor/Microservices/tree/master/message-queue) example.  
+If you want more information of how *ZeroMQ* works, see the [actor-model](https://github.com/delvedor/Microservices/tree/master/actor-model) example.  
 If you want more information about *SWIM* [this](http://www.cs.cornell.edu/~asdas/research/dsn02-SWIM.pdf) is the white paper.
 
 
