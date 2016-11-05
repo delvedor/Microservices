@@ -9,7 +9,7 @@ In every implementation you will find a readme with the idea behind the architec
 Architectures:
 
 1. <a href="https://github.com/delvedor/Microservices/tree/master/central-registry">Central registry, REST</a>
-2. <a href="https://github.com/delvedor/Microservices/tree/master/message-queue">Message Queue</a>
+2. <a href="https://github.com/delvedor/Microservices/tree/master/actor-model">Actor model</a>
 3. <a href="https://github.com/delvedor/Microservices/tree/master/pub-sub">Pub/Sub</a>
 4. <a href="https://github.com/delvedor/Microservices/tree/master/swim">SWIM</a>
 
