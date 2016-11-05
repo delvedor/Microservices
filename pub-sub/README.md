@@ -61,7 +61,7 @@ The publisher maintains the message order, but the subscriber for some reasons t
 A solution can use a delivery receipt, if a subscriber does not emit a receipt the publisher know that something went wrong.
 
 ## Usage
-You will need Redis installed on your machine to run this example, in you are on macOS, just use `brew install redis`.
+You will need Redis installed on your machine to run this example, if you are on macOS, just use `brew install redis`.
 ```bash
 # Run Redis
 $ npm run redis
