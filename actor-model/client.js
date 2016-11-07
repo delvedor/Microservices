@@ -1,18 +1,3 @@
-/* Workflow:
- * 1) the client connects to the message broker specifying what queue interests him.
- * 2) the client sends the request through the socket to the services and wait for the answers.
- * 3) the message broker will handle all the communication and all the network latency problems.
- *
- * The client/services does not know where are the other services,
- * they only need to know where is the Message broker, who will handle the communication.
- *
- *     ------------      ------------      -------------
- *     |          | ---> |          | ---> |           |
- *     |  Client  |      |  Broker  |      |  Service  |
- *     |          | <--- |          | <--- |           |
- *     ------------      ------------      -------------
- */
-
 'use strict'
 
 const zmq = require('zmq')
@@ -56,7 +41,7 @@ sumPull.on('message', msg => {
   const compose = {
     x: 'The sum result is: ',
     y: msg.result,
-    id: id
+    id: id++
   }
   concatPush.send(JSON.stringify(compose))
 })
@@ -66,7 +51,7 @@ multPull.on('message', msg => {
   const compose = {
     x: 'The mult result is: ',
     y: msg.result,
-    id: id
+    id: id++
   }
   concatPush.send(JSON.stringify(compose))
 })
